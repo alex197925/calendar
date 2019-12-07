@@ -1,0 +1,84 @@
+
+ 
+ 
+ .bg {
+    max-width: 1024px;
+    margin: auto;
+    padding: 24px;
+}
+
+
+.img-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .img-container img, .cover img {
+     width: 100%;
+     display: block;
+     margin: 14px;
+ }
+ .cover img{
+     height: 100%;
+ }
+
+ .img-container img.landscap, .cover img.landscap {
+     width: unset;
+     height: 100%;
+ }
+
+ .img-container .cover {
+     width: 100%;
+     height: 100%;
+ }
+
+ .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+ }
+ .bg {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-gap: 10px;
+    justify-content: center;
+ }
+
+  @media screen and (min-width:768px) {
+   .bg {
+    grid-template-columns: repeat(3, 181px);
+    grid-gap: 10px;
+ }
+
+ .img-container {
+    width: 181px;
+    height: 181px;
+ }
+}
+
+  @media screen and (min-width:1024px) {
+    .bg {
+        grid-template-columns: repeat(5, 181px);
+ 
+    }
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
